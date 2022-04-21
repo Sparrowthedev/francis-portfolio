@@ -11484,7 +11484,7 @@ li a:hover {
   padding-left: 0.5rem;
   margin-bottom: 0.7rem;
 }
-.cta-info__list__list__container {
+.cta-info__list .list-container {
   display: none;
 }
 
@@ -11600,6 +11600,7 @@ li a:hover {
   right: 1.875rem;
   bottom: 1.875rem;
   z-index: 9999;
+  background-color: rgba(253, 126, 20, 0.7);
 }
 .back-to-top i {
   color: #fff;

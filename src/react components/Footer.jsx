@@ -86,12 +86,17 @@ const Footer = () => {
                     <div class="col-12">
                         <div class="footer-bottom__copyright">
                             Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021 <a href="#home" class="c-link">FrancWrites</a> | Created by <a
-                                href="http://codewithpatrick.com" target="_blank">Sparrowthedev</a>
+                                href="https://github.com/Sparrowthedev" target="_blank">Sparrowthedev</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        {/* Back to top buttton */}
+        <a href="#home" className="shadow btn rounded-circle back-to-top">
+            <i className="fas fa-chevron-up"></i>
+        </a>
     </footer>
 
   )
