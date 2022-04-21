@@ -27,7 +27,7 @@ const Intro = () => {
             {/* START THE SECOND COL */}
             <div class="col-md-6 intros text-end">
                 <div class="img-box">
-                    <img src="/images/arts/content.png" alt="writer svg" class="img-fluid main-img"/>
+                    <img src="images/arts/content.png" alt="writer svg" class="img-fluid main-img"/>
                 </div>
             </div>
         </div>
