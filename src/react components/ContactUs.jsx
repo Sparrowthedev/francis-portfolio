@@ -36,8 +36,8 @@ const ContactUs = () => {
 
                     <ul class="cta-info__list">
                     <div className="d-flex align-items-center list-container"><div className="icon fas fa-check"></div><li>I'll prepare the proposal.</li></div>
-                    <div className="d-flex align-items-center list-container"><div className="icon fas fa-check"></div><li>I'll prepare the proposal.</li></div>
-                    <div className="d-flex align-items-center list-container"><div className="icon fas fa-check"></div><li>I'll prepare the proposal.</li></div>
+                    <div className="d-flex align-items-center list-container"><div className="icon fas fa-check"></div><li>We'll discuss it together.</li></div>
+                    <div className="d-flex align-items-center list-container"><div className="icon fas fa-check"></div><li>Let's start the discussion.</li></div>
                     </ul>
                 </div>
             </div>
