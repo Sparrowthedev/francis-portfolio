@@ -43,7 +43,7 @@ const Testimonial = () => {
                                 <img src="images/testimonials/client-1.jpg" alt="client-1"
                                     class="rounded-circle img-fluid"/>
                             </div>
-                             client name and role 
+                             {/* client name and role  */}
                             <div class="testimonials__name">
                                 <h3>Daniel Stone</h3>
                                 <p class="fw-light">Ceo & Founder</p>

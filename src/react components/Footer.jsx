@@ -85,7 +85,7 @@ const Footer = () => {
                 <div class="row text-center text-white">
                     <div class="col-12">
                         <div class="footer-bottom__copyright">
-                            &COPY; Copyright 2021 <a href="#home" class="c-link">FrancWrites</a> | Created by <a
+                            Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021 <a href="#home" class="c-link">FrancWrites</a> | Created by <a
                                 href="http://codewithpatrick.com" target="_blank">Sparrowthedev</a>
                         </div>
                     </div>

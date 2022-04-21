@@ -35,9 +35,9 @@ const ContactUs = () => {
                     <h3 class="display-3--brief">What will be the next step?</h3>
 
                     <ul class="cta-info__list">
-                        <li>I'll prepare the proposal.</li>
-                        <li>we'll discuss it together.</li>
-                        <li>let's start the discussion.</li>
+                    <i class="fa fa-check" aria-hidden="true"></i><li>I'll prepare the proposal.</li>
+                    <i class="fa fa-check" aria-hidden="true"></i><li>we'll discuss it together.</li>
+                    <i class="fa fa-check" aria-hidden="true"></i><li>let's start the discussion.</li>
                     </ul>
                 </div>
             </div>
