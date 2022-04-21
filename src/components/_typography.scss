@@ -1,0 +1,129 @@
+@use '../scss/custom' as *;
+@use './mixins' as *;
+
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+    &--intro{
+        display: inline-block;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        color: rgba($secondary, 0.7);
+    }
+    &--description{
+        display: block;
+        margin-top: 1.2rem;
+        font-size: 1rem;
+        color: $white;
+
+        @include media-breakpoint-up(lg){
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// HEADING LINE
+.heading-line::before{
+    content: '';
+    width: 10rem;
+    height: 0.1rem;
+    margin: 0 auto;
+    display: block;
+    padding-top: 0.2rem;
+    background-color: $primary;
+}
+.heading-line::after{
+    content: '';
+    width: 2rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: $primary;
+}
+
+// DISPLAY 3 EDIT
+.display-3{
+    font-family: 'Poppins', sans-serif;
+
+    &--title{
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        -webkit-text-fill-color: transparent;
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.8rem;
+        }
+    }
+}
+
+// BORDER RIGHT
+.border-right{
+    border-right: 0;
+
+   @include media-breakpoint-up(md){
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+   }
+}
+
+// Gradient
+.gradient{
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(209, 194, 23, 1) 0%,
+        rgba(255, 235, 0, 1) 0%,
+        rgba(70, 79, 112, 1) 0%,
+        rgba(45, 127, 163, 1) 0%,
+        rgba(4, 21, 70, 1) 0%,
+        rgba(13, 38, 111, 1) 100%,
+        rgba(13, 38, 111, 1) 100%,
+        rgba(13, 38, 112, 1) 100%,
+        rgba(12, 39, 122, 1) 100%,
+        rgba(9, 43, 153, 1) 100%,
+        rgba(0, 56, 255, 1) 100%,
+        rgba(9, 13, 121, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        90deg,
+        rgba(209, 194, 23, 1) 0%,
+        rgba(255, 235, 0, 1) 0%,
+        rgba(70, 79, 112, 1) 0%,
+        rgba(45, 127, 163, 1) 0%,
+        rgba(4, 21, 70, 1) 0%,
+        rgba(13, 38, 111, 1) 100%,
+        rgba(13, 38, 111, 1) 100%,
+        rgba(13, 38, 112, 1) 100%,
+        rgba(12, 39, 122, 1) 100%,
+        rgba(9, 43, 153, 1) 100%,
+        rgba(0, 56, 255, 1) 100%,
+        rgba(9, 13, 121, 1) 100%
+      );
+      background: linear-gradient(
+        90deg,
+        rgba(209, 194, 23, 1) 0%,
+        rgba(255, 235, 0, 1) 0%,
+        rgba(70, 79, 112, 1) 0%,
+        rgba(45, 127, 163, 1) 0%,
+        rgba(4, 21, 70, 1) 0%,
+        rgba(13, 38, 111, 1) 100%,
+        rgba(13, 38, 111, 1) 100%,
+        rgba(13, 38, 112, 1) 100%,
+        rgba(12, 39, 122, 1) 100%,
+        rgba(9, 43, 153, 1) 100%,
+        rgba(0, 56, 255, 1) 100%,
+        rgba(9, 13, 121, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d1c217",endColorstr="#090d79",GradientType=1);
+}
+

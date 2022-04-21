@@ -1,0 +1,57 @@
+@use "../scss/custom" as *;
+// Gradient mixin
+@mixin gradient {
+    background: -moz-linear-gradient(
+    90deg,
+    rgba(209, 194, 23, 1) 0%,
+    rgba(255, 235, 0, 1) 0%,
+    rgba(70, 79, 112, 1) 0%,
+    rgba(45, 127, 163, 1) 0%,
+    rgba(4, 21, 70, 1) 0%,
+    rgba(13, 38, 111, 1) 100%,
+    rgba(13, 38, 111, 1) 100%,
+    rgba(13, 38, 112, 1) 100%,
+    rgba(12, 39, 122, 1) 100%,
+    rgba(9, 43, 153, 1) 100%,
+    rgba(0, 56, 255, 1) 100%,
+    rgba(9, 13, 121, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(209, 194, 23, 1) 0%,
+    rgba(255, 235, 0, 1) 0%,
+    rgba(70, 79, 112, 1) 0%,
+    rgba(45, 127, 163, 1) 0%,
+    rgba(4, 21, 70, 1) 0%,
+    rgba(13, 38, 111, 1) 100%,
+    rgba(13, 38, 111, 1) 100%,
+    rgba(13, 38, 112, 1) 100%,
+    rgba(12, 39, 122, 1) 100%,
+    rgba(9, 43, 153, 1) 100%,
+    rgba(0, 56, 255, 1) 100%,
+    rgba(9, 13, 121, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(209, 194, 23, 1) 0%,
+    rgba(255, 235, 0, 1) 0%,
+    rgba(70, 79, 112, 1) 0%,
+    rgba(45, 127, 163, 1) 0%,
+    rgba(4, 21, 70, 1) 0%,
+    rgba(13, 38, 111, 1) 100%,
+    rgba(13, 38, 111, 1) 100%,
+    rgba(13, 38, 112, 1) 100%,
+    rgba(12, 39, 122, 1) 100%,
+    rgba(9, 43, 153, 1) 100%,
+    rgba(0, 56, 255, 1) 100%,
+    rgba(9, 13, 121, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d1c217",endColorstr="#090d79",GradientType=1);
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
