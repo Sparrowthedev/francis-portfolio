@@ -4,7 +4,7 @@
 
 .footer {
   padding-top: 1rem;
-  background-color: $footer;
+  @include gradient;
 }
 
 // STYLE THE CONTACT-BOX CONTENT 
@@ -13,7 +13,7 @@
 
   &__icon {
      width: 2rem;
-     stroke: $primary; 
+     stroke: rgba($secondary, 0.7); 
      padding-top: 0.5rem;
 
      @include media-breakpoint-up(sm) {
@@ -27,11 +27,17 @@
       font-weight: 600;
       
 
-
       &--title {
           color: $white;
           text-decoration: none;
           font-size: 1rem;
+          transition: 0.3s ease;
+
+
+          &:hover{
+            color: rgba($secondary, 0.7);
+            transition: 0.3s ease;
+          }
 
           @include media-breakpoint-up(sm) {
               font-size: 1.4rem;
@@ -54,10 +60,11 @@
 
 // STYLE THE SOCIAL MEDIA CONTENT 
 .footer-sm {
-
+  background-color: rgba($secondary, 0.7);
 
   a {
       color: $white;
+      transition: 0.3s ease;
 
       i {
           font-size: 1rem;
@@ -70,13 +77,13 @@
 
       }
       &:hover {
-          color: $primary;
+          color: $gray-200;
+          transition: 0.3s ease;
       }
   }
 }
 
 .footer-bottom {
-  background-color: $black;
 
   &__copyright {
       color: $gray-600;
@@ -86,10 +93,14 @@
       a {
           color: $gray-300;
           text-decoration: none;
+          transition: 0.3s ease;
+
 
           &:hover {
-              color: $primary;
+              color: rgba($secondary, 0.7) !important;
               text-decoration: underline;
+              transition: 0.3s ease;
+
            
           }
       }
