@@ -36,7 +36,7 @@ export const portfolioItems = [
         desc: "Project name goes here"
     },
     {
-        img: "/images/portfolio/portfolio-7.jpg",
+        img: "images/portfolio/portfolio-7.jpg",
         alt: "portfolio pic",
         Title: "project name goes here 7",
         desc: "Project name goes here"
