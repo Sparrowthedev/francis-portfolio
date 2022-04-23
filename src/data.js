@@ -44,13 +44,16 @@ export const portfolioItems = [
     {
         img: "images/portfolio/portfolio-8.jpg",
         alt: "portfolio pic",
-        Title: "project name goes here 8",
+        Title: "project 8",
         desc: "Project name goes here"
-    },
+    }
+];
+
+export const portfolioItem12 = [
     {
         img: "images/portfolio/portfolio-9.jpg",
         alt: "portfolio pic",
-        Title: "project name goes here 9",
+        Title: "project 8",
         desc: "Project name goes here"
     }
 ]

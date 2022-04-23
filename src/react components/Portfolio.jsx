@@ -1,5 +1,6 @@
 import React from 'react';
 import { portfolioItems } from '../data';
+import { portfolioItem12 } from '../data';
 
 const Portfolio = () => {
   return (
@@ -45,8 +46,21 @@ const Portfolio = () => {
                 </div>
             </div>
             ))}
-        </div>
-    </div>    
+            {portfolioItem12.map(item => (
+                 <div class="col-lg-4 col-md-12">
+                 <div class="portfolio-box shadow">
+                     <img src={item.img} alt={item.alt} class="img-fluid"/>
+                     <div class="portfolio-info">
+                         <div class="caption">
+                             <h4>{item.Title}</h4>
+                             <p>{item.desc}</p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            ))}
+    </div> 
+    </div>   
 </section>
 
   )
