@@ -1,8 +1,30 @@
-import React from 'react';
-import { portfolioItems } from '../data';
-import { portfolioItem12 } from '../data';
+import axios from '../axios';
+import React, { useEffect, useState } from 'react';
+
 
 const Portfolio = () => {
+    const [priItems, setpriItems] = useState([]);
+    const [secItems, setsecItems] = useState([]);
+
+    useEffect(() => {
+        async function priData() {
+            const req = await axios.get('/primary/items');
+
+            setpriItems(req.data);
+        }
+
+        priData();
+    }, []);
+    useEffect(() => {
+        async function secData() {
+            const req = await axios.get('/secondary/items');
+
+            setsecItems(req.data);
+        }
+
+        secData();
+    }, [])
+
   return (
     <section id="portfolio" class="portfolio">
     <div class="container">
@@ -33,26 +55,26 @@ const Portfolio = () => {
 
         {/* <!-- Start the Porfolio content --> */}
         <div class="row">
-            {portfolioItems.map(item=>(
+            {priItems.map(item=>(
                 <div class="col-lg-4 col-md-6">
                 <div class="portfolio-box shadow">
-                    <img src={item.img} alt={item.alt} class="img-fluid"/>
+                    <img src={item.imgUrl} alt={item.alt} class="img-fluid"/>
                     <div class="portfolio-info">
                         <div class="caption">
-                            <h4>{item.Title}</h4>
+                            <h4>{item.title}</h4>
                             <p>{item.desc}</p>
                         </div>
                     </div>
                 </div>
             </div>
             ))}
-            {portfolioItem12.map(item => (
+            {secItems.map(item => (
                  <div class="col-lg-4 col-md-12">
                  <div class="portfolio-box shadow">
-                     <img src={item.img} alt={item.alt} class="img-fluid"/>
+                     <img src={item.imgUrl} alt={item.alt} class="img-fluid"/>
                      <div class="portfolio-info">
                          <div class="caption">
-                             <h4>{item.Title}</h4>
+                             <h4>{item.title}</h4>
                              <p>{item.desc}</p>
                          </div>
                      </div>
